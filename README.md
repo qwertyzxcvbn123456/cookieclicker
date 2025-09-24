@@ -1,6 +1,8 @@
-# cookieclicker
+# cookieclicker mirror edited
 
 <img src="img/perfectCookie.png" width="128">
+
+> Hello, this section of the readme is from the creator of this fork. I have removed out all the ads added by the creator of the "mirror", and will soon add the cookie clicker addon cookiemonster
 
 The original game can be found at http://orteil.dashnet.org/cookieclicker/
 
