@@ -193,5 +193,17 @@ var App=typeof App==='undefined'?0:App;
 	</div>
 
 </div>
+   <script>
+    // Wait until the Game object is ready on the page
+    const readyCheck = setInterval(() => {
+      // Access Game from the window object directly (no unsafeWindow)
+      const Game = window.Game;
+
+      if (typeof Game !== 'undefined' && typeof Game.ready !== 'undefined' && Game.ready) {
+        Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+        clearInterval(readyCheck);
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
