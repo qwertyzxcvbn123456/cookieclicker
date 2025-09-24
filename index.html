@@ -269,6 +269,17 @@ var App=typeof App==='undefined'?0:App;
 	</div>
 
 </div>
+	<script>
+  const loadMod = () => {
+    if (typeof Game !== 'undefined' && Game.LoadMod) {
+      Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');
+    } else {
+      setTimeout(loadMod, 500); // Try again in 500ms
+    }
+  };
+  loadMod();
+</script>
+
 
 </body>
 </html>
